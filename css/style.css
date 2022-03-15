@@ -149,18 +149,26 @@ footer{
   align-self: center;
 }
 .linkedin{
-border: 3px solid #000000;
+border: 2px solid #000000;
 box-sizing: border-box;
 border-radius: 50%;
 }
 
 
 @media (max-width: 1280px ){
-  header{
+  .descricao{
     width: 100%;
+    height: 50%;
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
+    font-size: 0.9rem;
+    padding: 10%;
+    padding-top: 50%;
+    }
+    
+    #tituloc{
+      text-align: center;
     }
     
     .curiosidade{
@@ -173,29 +181,34 @@ border-radius: 50%;
       width: 100%;
     }
     
-    
-    
     .c{
     width:60%;
-    height: 60%;
+    height:60%;
     }
     
     footer .rodape{
       width: 100%;
     }
-
-    }
     
+    }
 
 
 
 @media(max-width: 420px){
 
-header{
+.descricao{
 width: 100%;
+height: 50%;
 display: inline-flex;
 flex-direction: column;
 flex-wrap: wrap;
+font-size: 0.9rem;
+padding: 10%;
+padding-top: 50%;
+}
+
+#tituloc{
+  text-align: center;
 }
 
 .curiosidade{
@@ -207,8 +220,6 @@ flex-wrap: wrap;
 .video{
   width: 100%;
 }
-
-
 
 .c{
 width:60%;
