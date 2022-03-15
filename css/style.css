@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bungee&family=Permanent+Marker&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&display=swap');
+
 
 *{
     padding: 0;
@@ -8,8 +9,9 @@
     --cor-azul: rgb(68, 132, 175);
     --cor-cinza: gray;
     --cor-amarelo: yellow;
-    font-family: 'Roboto';
+
 }
+
 html{
 font-size: 20px;
 }
@@ -19,6 +21,7 @@ header{
   display: inline-flex;
   position: fixed;
   background-color: var(--cor-cinza);
+  font-family: 'Indie Flower', cursive;
 }
 .cardsnav{
   padding:20px;
@@ -29,7 +32,6 @@ header{
   width: 100%;
   height: 150px;
   text-align: center;
-  
   }
 .logo {
 width: 340px;
@@ -53,10 +55,10 @@ border: 1px solid #000000;
 box-sizing: border-box;
 border-radius: 36px;
 text-align: center;
-font-family: 'Roboto';
+font-family: 'Indie Flower', cursive;
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
+font-size: 1.5rem;
 line-height: 28px;
 color: #000000;
 }
@@ -84,7 +86,8 @@ height: 532px;
 background: var(--cor-azul);
 font-style: normal;
 font-weight: 400;
-font-size: 24px;
+font-family: 'Acme', sans-serif;
+font-size: 1rem;
 line-height: 28px;
 color: #000000;
 text-align: justify;
@@ -106,6 +109,7 @@ padding-top: 150px;
   padding: 50px;
   padding-top: 50px;
   align-self: flex-start;
+  font-family: 'Indie Flower', cursive;
 }
 .c{
 display: flex;
@@ -118,7 +122,8 @@ border-radius: 31px;
 padding: 30px;
 text-align: justify;
 align-items: center;
-font-size: 0.5rem; 
+font-size: 0.8rem; 
+font-family: 'Acme', sans-serif;
 }
 .video{
   display: flex;
@@ -144,25 +149,74 @@ footer{
   align-self: center;
 }
 .linkedin{
-  border: 3px solid #000000;
+border: 3px solid #000000;
 box-sizing: border-box;
 border-radius: 50%;
 }
-@media (max-width: 768px ){
-.header{
-width:100%
+
+
+@media (max-width: 1280px ){
+  header{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+    
+    .curiosidade{
+      display: inline-flex;
+      flex-direction: column;
+      gap:30px;
+    }
+    
+    .video{
+      width: 100%;
+    }
+    
+    
+    
+    .c{
+    width:60%;
+    height: 60%;
+    }
+    
+    footer .rodape{
+      width: 100%;
+    }
+
+    }
+    
+
+
+
+@media(max-width: 420px){
+
+header{
+width: 100%;
+display: inline-flex;
+flex-direction: column;
+flex-wrap: wrap;
 }
+
+.curiosidade{
+  display: inline-flex;
+  flex-direction: column;
+  gap:30px;
+}
+
+.video{
+  width: 100%;
+}
+
+
+
 .c{
 width:60%;
+height:60%;
 }
 
-}
-@media(max-width: 460px){
-.header{
-width:100%
+footer .rodape{
+  width: 100%;
 }
 
-.c{
-width:60%
-}
 }
