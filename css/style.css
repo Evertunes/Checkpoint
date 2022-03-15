@@ -28,7 +28,7 @@ header{
 .logo {
 width: 340px;
 height: 140px;
-background-image: url('/img/bandeira.jpg');
+background-image: url('../img/bandeira.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size:100%;
