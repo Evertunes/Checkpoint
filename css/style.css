@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Bungee&family=Permanent+Marker&display=swap');
 
 *{
     padding: 0;
@@ -8,6 +10,10 @@
     --cor-amarelo: yellow;
     font-family: 'Roboto';
 }
+html{
+font-size: 20px;
+}
+
 
 header{
   display: inline-flex;
@@ -112,6 +118,7 @@ border-radius: 31px;
 padding: 30px;
 text-align: justify;
 align-items: center;
+font-size: 0.5rem; 
 }
 .video{
   display: flex;
@@ -142,8 +149,20 @@ box-sizing: border-box;
 border-radius: 50%;
 }
 @media (max-width: 768px ){
+.header{
+width:100%
+}
+.c{
+width:60%;
+}
 
 }
 @media(max-width: 460px){
+.header{
+width:100%
+}
 
+.c{
+width:60%
+}
 }
