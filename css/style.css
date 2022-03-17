@@ -188,6 +188,7 @@ footer{
   justify-content: center
 }
 
+<<<<<<< HEAD
 .titulo{
   padding-bottom: 5%;
 }
@@ -205,6 +206,8 @@ footer{
   width: 100%;
   gap:10%;
 }
+=======
+>>>>>>> 45044a0e15e6a51de93cbcae513d1c4669fb854d
 
 .botao{
   width: 100%;
