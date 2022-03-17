@@ -22,34 +22,44 @@ header{
   position: fixed;
   background-color: var(--cor-cinza);
   font-family: 'Indie Flower', cursive;
+  width: 100%;
+  flex-direction: row;
 }
 .cardsnav{
   padding:20px;
+  flex-direction: row;
   display: inline-flex;
   justify-content:center;
-  align-items:center;
-  gap: 200px;
+  align-items: center;
+  gap: 5%;
   width: 100%;
-  height: 150px;
   text-align: center;
   }
+
 .logo {
-width: 340px;
-height: 140px;
+width: 20%;
+height: 90%;
 background-image: url('../img/bandeira.jpg');
 background-repeat: no-repeat;
 background-position: center;
 background-size:100%;
 border: 1px solid #000000;
 box-sizing: border-box;
-border-radius: 36px;
+border-radius: 40%;
 }
+
+.container-botao{
+  gap:5%;
+  display: flex;
+  flex-direction: row;
+}
+
 .botao{
 display: inline-flex;
 justify-content: center;
 align-items: center;
-width: 197px;
-height: 82px;
+width: 60%;
+height: 30%;
 background: #C4C4C4;
 border: 1px solid #000000;
 box-sizing: border-box;
@@ -59,8 +69,9 @@ font-family: 'Indie Flower', cursive;
 font-style: normal;
 font-weight: 400;
 font-size: 1.5rem;
-line-height: 28px;
+line-height: 90%;
 color: #000000;
+padding: 10%;
 }
 .navegacao{
   display: flex;
@@ -70,10 +81,7 @@ color: #000000;
   padding: 27px;
 
 }
-img{
-width: 141px;
-height: 141px;
-}
+
 .botao a{
   text-decoration: none;
   color: #000000;
@@ -82,7 +90,7 @@ height: 141px;
 display: flex;
 flex-direction: row;
 width: 100%;
-height: 532px;
+height: 50%px;
 background: var(--cor-azul);
 font-style: normal;
 font-weight: 400;
@@ -92,7 +100,8 @@ line-height: 28px;
 color: #000000;
 text-align: justify;
 align-items:center;
-padding-top: 150px;
+padding: 10%;
+padding-top: 20%;
 }
 .curiosidade{
   display: flex;
@@ -134,67 +143,73 @@ font-family: 'Acme', sans-serif;
   width: 1077px;
   padding-top: 50px;
 }
+
+
 footer{
-  padding-top: 50px;
+  width: 100%;
+  padding-top: 5%;
 }
+
 .rodape{
   width: 100%;
-  height: 200px;
+  height: 80px;
   display: flex;
-  justify-content:space-evenly;
   align-items: center;
-  background-color: var(--cor-azul);
+  justify-content: center;
+  padding-left: 30%;
+  flex-direction: row;
+  background-color: var(--cor-cinza);
 }
-.github{
+ 
+.linkgit{
+  width: 10%;
+  align-self:center;
+}
+.linkd{
+  width: 8%;
   align-self: center;
 }
-.linkedin{
-border: 2px solid #000000;
-box-sizing: border-box;
-border-radius: 50%;
+
+
+@media(max-width: 425px){
+
+  header{
+    display: flex;
+    position:fixed; 
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
+.cardsnav{
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
 
-@media (max-width: 1280px ){
-  .descricao{
-    width: 100%;
-    height: 50%;
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-size: 0.9rem;
-    padding: 10%;
-    padding-top: 50%;
-    }
-    
-    #tituloc{
-      text-align: center;
-    }
-    
-    .curiosidade{
-      display: inline-flex;
-      flex-direction: column;
-      gap:30px;
-    }
-    
-    .video{
-      width: 100%;
-    }
-    
-    .c{
-    width:60%;
-    height:60%;
-    }
-    
-    footer .rodape{
-      width: 100%;
-    }
-    
-    }
+.titulo{
+  padding-bottom: 5%;
+}
 
+.logo{
+  width: 50%;
+  height: 100px;
+}
 
+.container-botao{
+  
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap:10%;
+}
 
-@media(max-width: 420px){
+.botao{
+  width: 100%;
+  height: 30%;
+}
 
 .descricao{
 width: 100%;
@@ -204,11 +219,16 @@ flex-direction: column;
 flex-wrap: wrap;
 font-size: 0.9rem;
 padding: 10%;
-padding-top: 50%;
+margin-top: 90%;
+
 }
 
 #tituloc{
   text-align: center;
+}
+
+.descricao{
+  padding-top: 20%;
 }
 
 .curiosidade{
@@ -226,8 +246,22 @@ width:60%;
 height:60%;
 }
 
-footer .rodape{
-  width: 100%;
+.rodape{
+  align-items: center;
+  padding-left: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--cor-azul);
 }
+ 
+.linkgit{
+  width: 30%;
+  align-self:center;
 
+}
+.linkd{
+  width: 25%;
+  align-self: center;
+}
 }
